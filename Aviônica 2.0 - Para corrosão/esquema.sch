@@ -110,7 +110,7 @@
 <circle x="-10.065" y="-16.034" radius="1" width="0.127" layer="21"/>
 <text x="-6.365" y="2.766" size="1.27" layer="21">MicroSD reader</text>
 </package>
-<package name="MPU6050_FOOTPRINT" urn="urn:adsk.eagle:footprint:39029067/2" library_version="15">
+<package name="MPU6050_FOOTPRINT" urn="urn:adsk.eagle:footprint:39029067/3" library_version="17">
 <wire x1="-10.16" y1="-11.43" x2="10.64" y2="-11.43" width="0.127" layer="21"/>
 <wire x1="10.64" y1="-11.43" x2="10.64" y2="4.17" width="0.127" layer="21"/>
 <wire x1="10.64" y1="4.17" x2="-10.16" y2="4.17" width="0.127" layer="21"/>
@@ -119,8 +119,8 @@
 <pad name="GND" x="-6.3145" y="-10.1845" drill="0.891"/>
 <pad name="SCL" x="-3.7145" y="-10.1845" drill="0.891"/>
 <pad name="SDA" x="-1.1145" y="-10.1845" drill="0.891"/>
-<pad name="XCL" x="1.4855" y="-10.1845" drill="0.891"/>
-<pad name="XDA" x="4.0855" y="-10.1845" drill="0.891"/>
+<pad name="XDA" x="1.4855" y="-10.1845" drill="0.891"/>
+<pad name="XCL" x="4.0855" y="-10.1845" drill="0.891"/>
 <pad name="ADO" x="6.6855" y="-10.1845" drill="0.891"/>
 <pad name="INT" x="9.2855" y="-10.1845" drill="0.891"/>
 <circle x="-8.16" y="2.57" radius="1" width="0.127" layer="21"/>
@@ -229,7 +229,7 @@
 <packageinstance name="MICROSD_READER_FOOTPRINT"/>
 </packageinstances>
 </package3d>
-<package3d name="MPU6050_FOOTPRINT" urn="urn:adsk.eagle:package:39029071/4" type="model" library_version="16">
+<package3d name="MPU6050_FOOTPRINT" urn="urn:adsk.eagle:package:39029071/5" type="model" library_version="17">
 <packageinstances>
 <packageinstance name="MPU6050_FOOTPRINT"/>
 </packageinstances>
@@ -283,13 +283,13 @@
 <wire x1="17.78" y1="33.02" x2="17.78" y2="-17.78" width="0.254" layer="94"/>
 <text x="-6.35" y="5.08" size="1.27" layer="94">MicroSD reader</text>
 </symbol>
-<symbol name="MPU6050_SYMBOL" urn="urn:adsk.eagle:symbol:39029069/2" library_version="15">
+<symbol name="MPU6050_SYMBOL" urn="urn:adsk.eagle:symbol:39029069/3" library_version="17">
 <pin name="VCC" x="-17.78" y="-17.78" length="middle" rot="R90"/>
 <pin name="GND" x="-12.7" y="-17.78" length="middle" rot="R90"/>
 <pin name="SCL" x="-7.62" y="-17.78" length="middle" rot="R90"/>
 <pin name="SDA" x="-2.54" y="-17.78" length="middle" rot="R90"/>
-<pin name="XCL" x="2.54" y="-17.78" length="middle" rot="R90"/>
-<pin name="XDA" x="7.62" y="-17.78" length="middle" rot="R90"/>
+<pin name="XDA" x="2.54" y="-17.78" length="middle" rot="R90"/>
+<pin name="XCL" x="7.62" y="-17.78" length="middle" rot="R90"/>
 <pin name="ADO" x="12.7" y="-17.78" length="middle" rot="R90"/>
 <pin name="INT" x="17.78" y="-17.78" length="middle" rot="R90"/>
 <wire x1="-20.32" y1="-12.7" x2="20.32" y2="-12.7" width="0.254" layer="94"/>
@@ -420,7 +420,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="MPU6050" urn="urn:adsk.eagle:component:39029073/5" library_version="16">
+<deviceset name="MPU6050" urn="urn:adsk.eagle:component:39029073/6" library_version="17">
 <description>Acelerômetro e Giroscópio</description>
 <gates>
 <gate name="G$1" symbol="MPU6050_SYMBOL" x="-43.18" y="-33.02"/>
@@ -438,7 +438,7 @@
 <connect gate="G$1" pin="XDA" pad="XDA"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:39029071/4"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:39029071/5"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -650,7 +650,7 @@
 <parts>
 <part name="U$1" library="CRD" library_urn="urn:adsk.eagle:library:39051337" deviceset="BMP280" device="V1" package3d_urn="urn:adsk.eagle:package:39029072/4"/>
 <part name="U$2" library="CRD" library_urn="urn:adsk.eagle:library:39051337" deviceset="MICROSD_READER" device="" package3d_urn="urn:adsk.eagle:package:39051340/5"/>
-<part name="U$3" library="CRD" library_urn="urn:adsk.eagle:library:39051337" deviceset="MPU6050" device="V1" package3d_urn="urn:adsk.eagle:package:39029071/4"/>
+<part name="U$3" library="CRD" library_urn="urn:adsk.eagle:library:39051337" deviceset="MPU6050" device="V1" package3d_urn="urn:adsk.eagle:package:39029071/5"/>
 <part name="U$5" library="CRD" library_urn="urn:adsk.eagle:library:39051337" deviceset="JST2.54X2P" device="" package3d_urn="urn:adsk.eagle:package:39191967/2"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
