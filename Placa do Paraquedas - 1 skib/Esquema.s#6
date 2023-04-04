@@ -7794,23 +7794,17 @@ Significa que os skibs haviam sido plugados, mas o sistema já os acionou.</text
 <label x="93.98" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$2" class="0">
-<segment>
-<wire x1="157.48" y1="30.48" x2="157.48" y2="27.94" width="0.1524" layer="91"/>
-</segment>
-</net>
 </nets>
 </sheet>
 </sheets>
 <errors>
-<approved hash="106,1,-43.18,30.48,BUZZER,,,,,"/>
-<approved hash="106,1,40.64,58.42,SINAL_SKIB1,,,,,"/>
-<approved hash="106,1,116.84,58.42,SINAL_SKIB2,,,,,"/>
 <approved hash="113,1,1.27,53.6617,LED1,,,,,"/>
-<approved hash="113,1,77.47,53.6617,LED2,,,,,"/>
+<approved hash="113,1,1.27,7.94173,LED2,,,,,"/>
 <approved hash="113,1,82.605,25.4,SKIB2,,,,,"/>
 <approved hash="113,1,-43.2252,63.5,BATERIA,,,,,"/>
-<approved hash="113,1,6.40501,25.4,SKIB1,,,,,"/>
+<approved hash="113,1,82.605,73.66,SKIB1,,,,,"/>
+<approved hash="113,1,-68.8171,44.2239,JP1,,,,,"/>
+<approved hash="113,1,162.797,63.7261,JP2,,,,,"/>
 </errors>
 </schematic>
 </drawing>

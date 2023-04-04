@@ -1826,7 +1826,6 @@ design rules under a new name.</description>
 <contactref element="Q1" pad="3"/>
 <contactref element="SP1" pad="-"/>
 <contactref element="BATERIA" pad="2"/>
-<wire x1="38.7604" y1="62.6872" x2="38.735" y2="62.611" width="0.1524" layer="1"/>
 <wire x1="52.1208" y1="49.53" x2="52.07" y2="49.53" width="0.1524" layer="16"/>
 <polygon width="0.1524" layer="1">
 <vertex x="8.89" y="93.98"/>
@@ -1837,6 +1836,11 @@ design rules under a new name.</description>
 <vertex x="8.89" y="95.25"/>
 <vertex x="8.89" y="93.98"/>
 </polygon>
+<wire x1="85.09" y1="60.96" x2="90.17" y2="63.5" width="0" layer="19" extent="1-1"/>
+<wire x1="52.1208" y1="49.53" x2="85.09" y2="60.96" width="0" layer="19" extent="16-16"/>
+<wire x1="38.735" y1="62.611" x2="52.07" y2="49.53" width="0" layer="19" extent="1-1"/>
+<wire x1="44.45" y1="73.66" x2="38.735" y2="62.611" width="0" layer="19" extent="1-1"/>
+<wire x1="36.8554" y1="38.1" x2="52.07" y2="49.53" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="OK1" pad="1"/>

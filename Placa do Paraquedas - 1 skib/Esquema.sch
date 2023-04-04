@@ -7225,12 +7225,11 @@ by R. Vogg  15.March.2002</description>
 <part name="E2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X1" device="" package3d_urn="urn:adsk.eagle:package:22485/2"/>
 <part name="E3" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X1" device="" package3d_urn="urn:adsk.eagle:package:22485/2"/>
 <part name="S1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X1" device="" package3d_urn="urn:adsk.eagle:package:22485/2"/>
-<part name="S2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X1" device="" package3d_urn="urn:adsk.eagle:package:22485/2"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="0" y="91.44" size="2.54" layer="91">Entradas:
+<text x="-10.16" y="93.98" size="2.54" layer="91">Entradas:
 - Bateria-1: Positivo da bateria de 3.7V
 - Bateria-2: Negativo da bateria de 3.7V
 - 3.3V: 3.3V do ESP32
@@ -7239,20 +7238,17 @@ by R. Vogg  15.March.2002</description>
 
 Saídas:
 - Sinal_skib1: Sinal que identifica se o SKIB1 foi plugado
-- Sinal_skib2: Sinal que identifica se o SKIB2 foi plugado
 
 OBS.:
 Quando:
 - Sinal_skib1: 0
-- Sinal_skib2: 0
 - Parachute: 0
-Significa que os skibs não foram plugados.
+Significa que o skib não foi plugado.
 
 Quando:
 - Sinal_skib1: 0
-- Sinal_skib2: 0
 - Parachute: 1
-Significa que os skibs haviam sido plugados, mas o sistema já os acionou.</text>
+Significa que o skib havia sido plugado, mas o sistema já o acionou.</text>
 </plain>
 <instances>
 <instance part="OK1" gate="A" x="33.02" y="60.96" smashed="yes">
@@ -7336,10 +7332,6 @@ Significa que os skibs haviam sido plugados, mas o sistema já os acionou.</text
 <instance part="S1" gate="G$1" x="175.26" y="63.5" smashed="yes">
 <attribute name="NAME" x="168.91" y="66.675" size="1.778" layer="95"/>
 <attribute name="VALUE" x="168.91" y="58.42" size="1.778" layer="96"/>
-</instance>
-<instance part="S2" gate="G$1" x="175.26" y="53.34" smashed="yes">
-<attribute name="NAME" x="168.91" y="56.515" size="1.778" layer="95"/>
-<attribute name="VALUE" x="168.91" y="48.26" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -7434,15 +7426,6 @@ Significa que os skibs haviam sido plugados, mas o sistema já os acionou.</text
 <wire x1="142.24" y1="63.5" x2="172.72" y2="63.5" width="0.1524" layer="91"/>
 <label x="142.24" y="63.5" size="1.778" layer="95"/>
 <pinref part="S1" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="SINAL_SKIB2" class="0">
-<segment>
-<wire x1="142.24" y1="60.96" x2="162.56" y2="60.96" width="0.1524" layer="91"/>
-<label x="142.24" y="58.42" size="1.778" layer="95"/>
-<wire x1="162.56" y1="60.96" x2="162.56" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="S2" gate="G$1" pin="1"/>
-<wire x1="162.56" y1="53.34" x2="172.72" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SKIB1" class="0">

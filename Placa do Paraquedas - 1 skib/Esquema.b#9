@@ -1837,11 +1837,6 @@ design rules under a new name.</description>
 <vertex x="8.89" y="95.25"/>
 <vertex x="8.89" y="93.98"/>
 </polygon>
-<wire x1="85.09" y1="60.96" x2="90.17" y2="63.5" width="0" layer="19" extent="1-1"/>
-<wire x1="52.1208" y1="49.53" x2="85.09" y2="60.96" width="0" layer="19" extent="16-16"/>
-<wire x1="38.735" y1="62.611" x2="52.07" y2="49.53" width="0" layer="19" extent="1-1"/>
-<wire x1="44.45" y1="73.66" x2="38.7604" y2="62.6872" width="0" layer="19" extent="1-1"/>
-<wire x1="36.8554" y1="38.1" x2="52.07" y2="49.53" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="OK1" pad="1"/>
@@ -1899,7 +1894,13 @@ design rules under a new name.</description>
 <signal name="VCC">
 <contactref element="BATERIA" pad="1"/>
 <contactref element="SKIB1" pad="1"/>
-<wire x1="41.8846" y1="38.1" x2="53.3654" y2="76.2" width="0" layer="19" extent="1-1"/>
+<wire x1="41.8846" y1="38.1" x2="41.91" y2="38.1254" width="1" layer="1"/>
+<wire x1="41.91" y1="45.72" x2="35.56" y2="52.07" width="1" layer="1"/>
+<wire x1="35.56" y1="52.07" x2="35.56" y2="74.93" width="1" layer="1"/>
+<wire x1="35.56" y1="74.93" x2="39.37" y2="78.74" width="1" layer="1"/>
+<wire x1="39.37" y1="78.74" x2="50.8254" y2="78.74" width="1" layer="1"/>
+<wire x1="50.8254" y1="78.74" x2="53.3654" y2="76.2" width="1" layer="1"/>
+<wire x1="41.91" y1="38.1254" x2="41.91" y2="45.72" width="1" layer="1"/>
 </signal>
 <signal name="SINAL_SKIB2">
 <contactref element="S2" pad="1"/>
