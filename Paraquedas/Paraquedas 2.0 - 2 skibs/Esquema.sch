@@ -7405,7 +7405,7 @@ by R. Vogg  15.March.2002</description>
 <sheets>
 <sheet>
 <plain>
-<text x="0" y="91.44" size="2.54" layer="91">Entradas:
+<text x="-30.48" y="139.7" size="2.54" layer="91">Entradas:
 - Bateria-1: Positivo da bateria de 3.7V
 - Bateria-2: Negativo da bateria de 3.7V
 - 3.3V: 3.3V do ESP32
@@ -7508,13 +7508,13 @@ Significa que os skibs haviam sido plugados, mas o sistema já os acionou.</text
 <attribute name="NAME" x="-69.85" y="27.305" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-69.85" y="35.56" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="S1" gate="G$1" x="175.26" y="63.5" smashed="yes">
-<attribute name="NAME" x="168.91" y="66.675" size="1.778" layer="95"/>
-<attribute name="VALUE" x="168.91" y="58.42" size="1.778" layer="96"/>
+<instance part="S1" gate="G$1" x="33.02" y="-25.4" smashed="yes">
+<attribute name="NAME" x="26.67" y="-22.225" size="1.778" layer="95"/>
+<attribute name="VALUE" x="26.67" y="-30.48" size="1.778" layer="96"/>
 </instance>
-<instance part="S2" gate="G$1" x="175.26" y="53.34" smashed="yes">
-<attribute name="NAME" x="168.91" y="56.515" size="1.778" layer="95"/>
-<attribute name="VALUE" x="168.91" y="48.26" size="1.778" layer="96"/>
+<instance part="S2" gate="G$1" x="33.02" y="-35.56" smashed="yes">
+<attribute name="NAME" x="26.67" y="-32.385" size="1.778" layer="95"/>
+<attribute name="VALUE" x="26.67" y="-40.64" size="1.778" layer="96"/>
 </instance>
 <instance part="OK2" gate="A" x="33.02" y="5.08" smashed="yes">
 <attribute name="NAME" x="26.035" y="10.795" size="1.778" layer="95"/>
@@ -7707,18 +7707,18 @@ Significa que os skibs haviam sido plugados, mas o sistema já os acionou.</text
 <label x="55.88" y="60.96" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<wire x1="142.24" y1="63.5" x2="172.72" y2="63.5" width="0.1524" layer="91"/>
-<label x="142.24" y="63.5" size="1.778" layer="95"/>
+<wire x1="0" y1="-25.4" x2="30.48" y2="-25.4" width="0.1524" layer="91"/>
+<label x="0" y="-25.4" size="1.778" layer="95"/>
 <pinref part="S1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="SINAL_SKIB2" class="0">
 <segment>
-<wire x1="142.24" y1="60.96" x2="162.56" y2="60.96" width="0.1524" layer="91"/>
-<label x="142.24" y="58.42" size="1.778" layer="95"/>
-<wire x1="162.56" y1="60.96" x2="162.56" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="0" y1="-27.94" x2="20.32" y2="-27.94" width="0.1524" layer="91"/>
+<label x="0" y="-30.48" size="1.778" layer="95"/>
+<wire x1="20.32" y1="-27.94" x2="20.32" y2="-35.56" width="0.1524" layer="91"/>
 <pinref part="S2" gate="G$1" pin="1"/>
-<wire x1="162.56" y1="53.34" x2="172.72" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="-35.56" x2="30.48" y2="-35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="OK2" gate="A" pin="EMIT"/>
